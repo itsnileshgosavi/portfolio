@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlTag" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nilesh's Portfolio</title>
+    <!-- meta description for SEO -->
+    <meta
+      content="Elevate your vision with Nilesh's portfolio showcasing creativity and innovation. Explore full-stack projects highlighting expertise and passion"
+      name="description"
+    />
+    <!-- meta keywords -->
+    <meta content="Portfolio, Projects, Developer" name="keywords" />
+    <!-- Favicon -->
+    <link href="assets/img/favicon.png" rel="icon" />
+
+    <!-- tailwind css file -->
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-[#EBF3E8] dark:bg-[#31363F] m-0">
+    <!-- Header Section -->
+    <header class="sticky top-0 bg-neutral-300 dark:bg-neutral-900 z-50 w-screen overflow-hidden">
+      <div class="container flex items-center justify-between">
+        <h1>
+          <a
+            class="p-5 text-3xl sm:text-4xl md:text-5xl text-slate-950 dark:text-white font-serif"
+            href="#"
+            >Portfolio</a
+          >
+        </h1>
+        <!-- day night toggle visible only to small devices  -->
+        <div class="mx-0 p-2 sm:p-3 sm:m-1 md:hidden">
+          <label class="swap swap-rotate">
+            <input
+              id="darkModeTogglee"
+              type="checkbox"
+              class="theme-controller"
+            />
+
+            <!-- sun icon -->
+            <svg
+              class="swap-off fill-orange-600 w-8 h-8"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"
+              />
+            </svg>
+
+            <!-- moon icon -->
+            <svg
+              class="swap-on fill-slate-400 w-8 h-8"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"
+              />
+            </svg>
+          </label>
+        </div>
+        
+        <!-- nav drawer for mobile divices -->
+
+        <div>
+          <div class="drawer drawer-end md:hidden">
+            
+            
+            <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+            <div class="drawer-content">
+              <label for="my-drawer-4" class="drawer-button btn dark:bg-slate-400"
+                >&#9776;</label
+              >
+            </div>
+            <div class="drawer-side ">
+              <label
+                for="my-drawer-4"
+                aria-label="close sidebar"
+                class="drawer-overlay"
+              ></label>
+              <ul
+                class="menu p-4 w-80 min-h-full bg-base-200 text-base-content dark:bg-slate-600"
+              >
+                <li class="mx-0 p-2 sm:p-3 sm:m-1">
+                  <a class="dark:text-white text-slate-950" href="#hero"
+                    >Home</a
+                  >
+                </li>
+                <li class="mx-0 p-2 sm:p-3 sm:m-1">
+                  <a class="dark:text-white text-slate-950" href="#about"
+                    >About</a
+                  >
+                </li>
+                <li class="mx-0 p-2 sm:p-3 sm:m-1">
+                  <a class="dark:text-white text-slate-950" href="#skills"
+                    >Skills</a
+                  >
+                </li>
+                <li class="mx-0 p-2 sm:p-3 sm:m-1">
+                  <a class="dark:text-white text-slate-950" href="#projects"
+                    >Projects</a
+                  >
+                </li>
+                <li class="mx-0 p-2 sm:p-3 sm:m-1">
+                  <a
+                    class="dark:text-white text-slate-950"
+                    href="#certifications"
+                    >Certifications</a
+                  >
+                </li>
+                <li class="mx-0 p-2 sm:p-3 sm:m-1">
+                  <a class="dark:text-white text-slate-950" href="#contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+            <!-- navbar for large and medium devices -->
+        <nav class="hidden md:inline-flex uppercase">
+          <ul class="flex max-w-full">
+            <li class="mx-0 p-2 sm:p-3 sm:m-1">
+              <a
+                class="dark:text-white hover:underline hover:text-blue-800 text-slate-950 text-sm lg:textarea-md font-bold" 
+                href="#hero"
+                >Home</a
+              >
+            </li>
+            <li class="mx-0 p-2 sm:p-3 sm:m-1">
+              <a
+                class="dark:text-white hover:underline hover:text-blue-800 text-slate-950 text-sm lg:textarea-md font-bold"
+                href="#about"
+                >About</a
+              >
+            </li>
+            <li class="mx-0 p-2 sm:p-3 sm:m-1">
+              <a
+                class="dark:text-white hover:underline hover:text-blue-800 text-slate-950 text-sm lg:textarea-md font-bold"
+                href="#skills"
+                >Skills</a
+              >
+            </li>
+            <li class="mx-0 p-2 sm:p-3 sm:m-1">
+              <a
+                class="dark:text-white hover:underline hover:text-blue-800 text-slate-950 text-sm lg:textarea-md font-bold"
+                href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li class="mx-0 p-2 sm:p-3 sm:m-1">
+              <a
+                class="dark:text-white hover:underline hover:text-blue-800 text-slate-950 text-sm lg:textarea-md font-bold"
+                href="#certifications"
+                >Certifications</a
+              >
+            </li>
+            <li class="mx-0 p-2 sm:p-3 sm:m-1">
+              <a
+                class="dark:text-white hover:underline hover:text-blue-800 text-slate-950 text-sm lg:textarea-md font-bold"
+                href="#contact"
+                >Contact</a
+              >
+            </li>
+            <!-- dark/light toggle -->
+            <li class="mx-0 p-2 sm:p-3 sm:m-1">
+              <label class="swap swap-rotate">
+                <input
+                  id="darkModeToggle"
+                  type="checkbox"
+                  class="theme-controller"
+                />
+
+                <!-- sun icon -->
+                <svg
+                  class="swap-off fill-orange-600 w-8 h-8"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"
+                  />
+                </svg>
+
+                <!-- moon icon -->
+                <svg
+                  class="swap-on fill-slate-400 w-8 h-8"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"
+                  />
+                </svg>
+              </label>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- hero section starts -->
+    <div id="hero" class="hero min-h-screen">
+      <div
+        class="hero-content flex-col lg:flex-row justify-center items-center"
+      >
+        <img
+          src="assets/img/IMG_9.jpg"
+          class="max-w-60 md:max-w-sm rounded-lg shadow-2xl shadow-black hover:transition-all hover:scale-x-110"
+        />
+        <div class="flex flex-col justify-center items-center">
+          <h1
+            class="text-4xl text-gray-700 dark:text-[#F8F6F4] font-bold md:text-6xl"
+          >
+            Nilesh Gosavi
+          </h1>
+          <p class="py-6 text-gray-500 text-2xl dark:text-[#E3F4F4]">
+            Web Developer, Freelancer, SEO Specialist
+          </p>
+          <ul class="m-5 flex mr-10 items-center">
+            <li
+              class="inline-flex m-4 items-center hover:translate-y-1 hover:border-blue-600 border-4 rounded-full"
+            >
+              <a
+                href="https://www.instagram.com/nilesh__gosavi/"
+                target="_blank"
+                ><img
+                  src="assets/img/instagram-20.png"
+                  alt="instagram icon"
+                  class="w-10 h-10"
+              /></a>
+            </li>
+            <li
+              class="inline-flex m-4 items-center hover:border-blue-600 border-4 hover:translate-y-1 rounded-full"
+            >
+              <a
+                href="https://www.linkedin.com/in/nilesh-gosavi77/"
+                target="_blank"
+              >
+                <img
+                  src="assets/img/linkedin-20.png"
+                  alt="instagram icon"
+                  class="w-10 h-10"
+                />
+              </a>
+            </li>
+            <li
+              class="inline-flex m-4 items-center hover:border-blue-600 border-4 hover:translate-y-1 rounded-full"
+            >
+              <a href="mailto:nbgosavi5@gmail.com"
+                ><img
+                  src="assets/img/email-20.png"
+                  alt="instagram icon"
+                  class="w-10 h-10"
+              /></a>
+            </li>
+            <li
+              class="inline-flex m-4 items-center hover:border-blue-600 border-4 hover:translate-y-1 rounded-full"
+            >
+              <a href="https://github.com/"
+                ><img
+                  src="assets/img/github-48.png"
+                  alt="github icon"
+                  class="w-10 h-10"
+              /></a>
+            </li>
+          </ul>
+          <a
+            href="https://drive.google.com/file/d/1-WAyUYZyOXixD64tS33TEKjiaEj2EsW5/view?usp=sharing"
+            target="_blank"
+            download="nilesh gosavi resume"
+            ><button class="btn btn-primary">Download Resume</button></a
+          >
+        </div>
+      </div>
+    </div>
+   
+    <!-- hero section ends -->
+
+    <main id="main">
+      <!-- About section starts  -->
+      <section
+        id="about"
+        class="flex flex-col flex-wrap justify-center items-center"
+      >
+        <div
+          class="h-auto w-[90%] m-5 bg-[#FCF8F3] dark:bg-[#66707a] dark:text-slate-100 text-slate-900 px-12 py-16 mb-12 rounded shadow shadow-slate-300 flex flex-col md:grid md:grid-cols-2 gap-10"
+        >
+          <div class="flex flex-col col-span-1 xl:flex-row">
+            <img
+              class="w-auto h-80 rounded-md shadow-md shadow-amber-100"
+              src="assets/img/Id Photo.jpeg"
+              alt="profile picture"
+            />
+            <div class="mx-5">
+              <h3 class="py-5">
+                <span class="font-extrabold">Name:</span> Nilesh Gosavi
+              </h3>
+              <h3 class="py-5">
+                <span class="font-extrabold">Profile:</span> Full Stack
+                Developer
+              </h3>
+              <h3 class="py-5">
+                <span class="font-extrabold">Email:</span> nbgosavi5@gmail.com
+              </h3>
+              <h3 class="py-5">
+                <span class="font-extrabold">Phone: </span>+91 7378328777
+              </h3>
+            </div>
+          </div>
+
+          <div>
+            <h5 class="text-center mb-5 text-3xl font-extrabold dark:text-slate-200 text-slate-900">About Me</h5>
+            <p class="text-center text-lg leading-8">
+              I am a seasoned full-stack developer with a passion for crafting
+              dynamic and innovative digital experiences. With a solid
+              foundation in both front-end and back-end technologies, I thrive
+              in bringing ideas to life through clean, efficient code and
+              intuitive user interfaces.
+            </p>
+            <p class="text-center text-lg leading-8">
+              Beyond my expertise in development, I specialize in marketing
+              services and search engine optimization (SEO). I understand the
+              importance of not only building exceptional websites and
+              applications but also ensuring they are discoverable and impactful
+              in today's competitive online landscape.
+            </p>
+            <p class="text-center text-lg leading-8">
+              Driven by a blend of creativity and technical prowess, I excel in
+              creating holistic digital solutions that resonate with target
+              audiences and drive tangible results. Whether it's developing
+              responsive websites, optimizing for search engines, or crafting
+              compelling marketing strategies, I am dedicated to delivering
+              excellence at every step of the journey.
+            </p>
+          </div>
+          <a class="m-auto justify-self-center col-span-2" href="#skills"
+            ><button class="button btn w-36 text-slate-950 dark:text-slate-100">
+              Read More
+            </button></a
+          >
+        </div>
+      </section>
+      <!-- about section ends  -->
+      <!-- skills section begins -->
+      <section id="skills" class="flex flex-col justify-center items-center">
+        <h2 class="text-center mb-5 text-3xl font-extrabold dark:text-slate-200 text-slate-900">My Skills</h2>
+        <div
+          class="h-auto w-[90%] m-5 bg-[#FCF8F3] dark:bg-[#66707a] dark:text-slate-100 text-slate-900 px-12 py-16 mb-12 rounded shadow shadow-slate-300 flex flex-col md:grid md:grid-cols-2 gap-10"
+        >
+        <div class="flex col-span-1 flex-col justify-center items-center">
+          <h3 class="text-3xl font-bold mb-6 dark:text-slate-50">Technical</h3>
+          <div
+            class="progress-container"
+          >
+            <div
+              class="progress w-[90%]"
+            >
+              <span>HTML</span> 90%
+            </div>
+          </div>
+          <div
+            class="progress-container"
+          >
+            <div
+              class="progress w-[85%]"
+            >
+              <span>CSS</span> 85%
+            </div>
+          </div>
+
+          <div
+            class="progress-container"
+          >
+            <div
+              class="progress w-[90%]"
+            >
+              <span>Tailwind CSS</span> 90%
+            </div>
+          </div>
+          <div
+            class="progress-container"
+          >
+            <div
+              class="progress w-[70%]"
+            >
+              <span>Javascript</span> 70%
+            </div>
+          </div>
+          <div
+            class="progress-container"
+          >
+            <div
+              class="progress w-[55%]"
+            >
+              <span>React JS</span> 55%
+            </div>
+          </div>
+          <div
+            class="progress-container"
+          >
+            <div
+              class="progress w-[60%]"
+            >
+              <span>Express JS</span> 60%
+            </div>
+          </div>
+
+          <div
+            class="progress-container"
+          >
+            <div
+              class="progress w-[65%]"
+            >
+              <span>Mongo DB</span> 65%
+            </div>
+          </div>
+          </div>
+          <div class="flex col-span-1 flex-col justify-center items-center">
+            <h3 class="text-3xl font-bold mb-6 dark:text-slate-50">Non Technical</h3>
+
+            <div class="grid grid-cols-2 grid-rows-2 gap-6">
+              <div class="text-center">
+                <div class="radial-progress bg-green-500 text-primary-content border-4 border-green-700" style="--value:95;" role="progressbar"> 95%</div>
+                <p class="font-semibold text-sm font-mono dark:text-white my-4">Communication</p>
+              </div>
+              <div class="text-center">
+                <div class="radial-progress bg-green-500 text-primary-content border-4 border-green-700" style="--value:85;" role="progressbar"> 85%</div>
+                <p class="font-semibold text-sm font-mono dark:text-white my-4">creativity</p>
+              </div>
+              <div class="text-center">
+                <div class="radial-progress bg-green-500 text-primary-content border-4 border-green-700" style="--value:80;" role="progressbar"> 80%</div>
+                <p class="font-semibold text-sm font-mono dark:text-white my-4">Problem Solving</p>
+              </div>
+              <div class="text-center">
+                <div class="radial-progress bg-green-500 text-primary-content border-4 border-green-700" style="--value:90;" role="progressbar"> 90%</div>
+                <p class="font-semibold text-sm font-mono dark:text-white my-4">Leadership</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- skills section ends  -->
+      <!-- project section starts  -->
+      <section id="projects" class="flex flex-col justify-center items-center w-full">
+        <div
+          class="flex flex-col items-center h-auto w-[90%] m-5 bg-[#FCF8F3] dark:bg-[#66707a] dark:text-slate-100 text-slate-900 px-10 py-16 mb-12 rounded shadow shadow-slate-300"
+        >
+          <h2 class="text-center mb-5 text-3xl font-extrabold dark:text-slate-200 text-slate-900">My Projects</h2>
+          <div class="flex flex-wrap items-center justify-evenly">
+            
+            <!-- cards for projects -->
+            <div class="card card-proj group">
+              <figure class="px-10 pt-10"><img class="rounded-lg group-hover:transition-all group-hover:duration-700 group-hover:scale-125" src="assets/img/task-manager.jpg" alt="task Manager" /></figure>
+              <div class="card-body">
+                <h2 class="card-title text-2xl mb-2 text-center text-white dark:text-black font-extrabold">Task Manager App</h2>
+                <p class="text-white dark:text-slate-900">Project description: This app allows you to manage your tasks. Add your tasks in and mark as completed when done. Or mark as pending 
+                  when its pending. Just delete the tasks when your done with them forever!</p>
+                <div class="card-actions justify-end">
+                 <a href="https://task-manager-theta-ashy.vercel.app/login" target="_blank"><button class="btn btn-primary">View in Action</button></a> 
+                </div>
+              </div>
+            </div>
+            <div class="card card-proj group">
+              <figure class="px-10 pt-10"><img class="group-hover:transition-all group-hover:duration-700 group-hover:scale-125" src="assets/img/logo-detect.jpg" alt="logo" /></figure>
+              <div class="card-body">
+                <h2 class="card-title text-2xl mb-2 text-center text-white dark:text-black font-extrabold">Logo Detector App</h2>
+                <p class="text-white dark:text-slate-900">Project description: This app can detect logos in the picture. It uses clarify API to do so. The app also has user authentication functionality.</p>
+                <div class="card-actions justify-end">
+                 <a href="https://logo-detector.vercel.app/login" target="_blank"><button class="btn btn-primary">View in Action</button></a> 
+                </div>
+              </div>
+            </div>
+            <div class="card card-proj group">
+              <figure class="px-10 pt-10"><img class="group-hover:transition-all group-hover:duration-700 group-hover:scale-125" src="assets/img/spotify.png" alt="spotify logo" /></figure>
+              <div class="card-body">
+                <h2 class="card-title text-2xl mb-2 text-center text-white dark:text-black font-extrabold">Spotify Clone</h2>
+                <p class="text-white dark:text-slate-900">Project description: This is a spotify clone built using react and spotify api. It requires premium to work.</p>
+                <div class="card-actions justify-end">
+                 <a href="https://itsnileshgosavi.github.io/Spotify-Clone-React-Project/" target="_blank"><button class="btn btn-primary">View in Action</button></a> 
+                </div>
+              </div>
+            </div>
+            <div class="card card-proj group">
+              <figure class="px-10 pt-10"><img class="group-hover:transition-all group-hover:duration-700 group-hover:scale-125" src="assets/img/background generator.avif" alt="bg generator" /></figure>
+              <div class="card-body">
+                <h2 class="card-title text-2xl mb-2 text-center text-white dark:text-black font-extrabold">Gradiient Background Generator</h2>
+                <p class="text-white dark:text-slate-900">Project description: This app generates gradient background code for css property. It is a basic app made with JS.!</p>
+                <div class="card-actions justify-end">
+                 <a href="https://github.com/itsnileshgosavi/backgroundgenerator" target="_blank"><button class="btn btn-primary">View in Action</button></a> 
+                </div>
+              </div>
+            </div>
+            <div class="card card-proj group">
+              <figure class="px-10 pt-10"><img class="group-hover:transition-all group-hover:duration-700 group-hover:scale-125 w-full" src="assets/img/face detection.jpg" alt="face detection bg image" /></figure>
+              <div class="card-body">
+                <h2 class="card-title text-2xl mb-2 text-center text-white dark:text-black font-extrabold">Face Detector App</h2>
+                <p class="text-white dark:text-slate-900">Project description: This app allows you to faces in the image. Just copy the link of the image and provide to the app and see magic.
+                  Check it out.
+                </p>
+                <div class="card-actions justify-end">
+                 <a href="https://github.com/itsnileshgosavi"><button class="btn btn-primary">View in Action</button></a> 
+                </div>
+              </div>
+            </div>
+            <div class="card card-proj group">
+              <figure class="px-10 pt-10"><img class="group-hover:transition-all group-hover:duration-700 group-hover:scale-125" src="assets/img/Red-YouTube-logo.png" alt="Youtube logo image" /></figure>
+              <div class="card-body">
+                <h2 class="card-title text-2xl mb-2 text-center text-white dark:text-black font-extrabold">YouTube Clone</h2>
+                <p class="text-white dark:text-slate-900">Project description: This is a youtube clone app built using react for practice.
+                  It is built using react, express and mongo db. It allows you to watch videos.
+                </p>
+                <div class="card-actions justify-end">
+                 <a href="https://github.com/itsnileshgosavi"><button class="btn btn-primary">View in Action</button></a> 
+                </div>
+              </div>
+            </div>
+            <div class="card card-proj group">
+              <figure class="px-10 pt-10"><img class="group-hover:transition-all group-hover:duration-700 group-hover:scale-125" src="assets/img/robot.jpg" alt="robots" /></figure>
+              <div class="card-body">
+                <h2 class="card-title text-2xl mb-2 text-center text-white dark:text-black font-extrabold">Robo Friends</h2>
+                <p class="text-white dark:text-slate-900">Project description: This is simple react app that allows you to search through the cards with robots pictures.!</p>
+                <div class="card-actions justify-end">
+                 <a href="https://github.com/itsnileshgosavi"><button class="btn btn-primary">View in Action</button></a> 
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <!-- projects section end and certificate section starts  -->
+      <section
+        id="certifications"
+        class="flex flex-col justify-center items-center"
+      >
+        <h2 class="text-center mb-5 text-3xl font-extrabold dark:text-slate-200 text-slate-900">My Certifications</h2>
+        <div
+          class="flex flex-col justify-center items-center md:flex-row flex-wrap"
+        > 
+        <div class="card card-cert group">
+          <figure class="h-[50%]">
+            <img
+              class="group-hover:transition-all group-hover:duration-700 group-hover:scale-110"
+              src="assets/img/internshala.jpg"
+              alt="internshala certificate!"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Full Stack Development:Let's begin</h2>
+            <p><span class="font-semibold">Skills: </span> Basics, VS Code, Etc.</p>
+            <div class="card-actions justify-end">
+              <a
+              href="https://trainings.internshala.com/s/v/3264754/8cf6142f"
+              target="_blank"
+              ><button class="btn btn-accent">Show Credentials</button></a
+            >
+            </div>
+          </div>
+        </div>
+          <div class="card card-cert group">
+            <figure class="h-[50%]"><img class="group-hover:transition-all group-hover:duration-700 group-hover:scale-110" src="assets/img/HTML.png" alt="HTML certificate!" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">HTML TRAINING ESSENTIALS</h2>
+              <p><span class="font-semibold">Skills:</span>HTML 5</p>
+              <div class="card-actions justify-end">
+                <a
+                  href="https://www.linkedin.com/learning/certificates/52bb79df20273eae656b8c41b471d5bf7d3208a6d5208ad06fc58d558840e2ed?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BixyzctYXTBWBjZxOCIbE%2BQ%3D%3D"
+                  target="_blank"
+                  ><button class="btn btn-accent">Show Credentials</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card card-cert group">
+            <figure class="h-[50%]">
+              <img
+                class="group-hover:transition-all group-hover:duration-700 group-hover:scale-125"
+                src="assets/img/SEO.png"
+                alt="search engine optimization course certification!"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Search Engine optimization: Foundations</h2>
+              <p><span class="font-semibold">Skills:</span>SEO, Technical SEO, Backlink Building, Keyword Research etc.</p>
+              <div class="card-actions justify-end">
+                <a
+                href="https://www.linkedin.com/learning/certificates/ae5b2bf5cb76e82dfd399deba70321f41eb2bb67ade187b3375f9201970a5f67?trk=share_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B%2BbaPOFFwRoCIFzXUIp4FuQ%3D%3D"
+                target="_blank"
+                ><button class="btn btn-accent">Show Credentials</button></a
+              >
+              </div>
+            </div>
+          </div>
+          <div class="card card-cert group">
+            <figure class="h-[50%]">
+              <img
+                class="group-hover:transition-all group-hover:duration-700 group-hover:scale-110"
+                src="assets/img/digital.png"
+                alt="Digital marketing certificate!"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Digital Media and Marketing Stategies</h2>
+              <p><span class="font-semibold">Skills:</span>SEO, SEM, Social Media Marketing, Content Marketing, Brand Communication, Digital Marketing</p>
+              <div class="card-actions justify-end">
+                <a
+                href="https://coursera.org/share/c18073b15763e2adbe086083dcdf19b1"
+                target="_blank"
+                ><button class="btn btn-accent">Show Credentials</button></a
+              >
+              </div>
+            </div>
+          </div>
+          <div class="card card-cert group">
+            <figure class="h-[50%]">
+              <img
+                class="group-hover:transition-all group-hover:duration-700 group-hover:scale-110"
+                src="assets/img/Google-ads.png"
+                alt="google ads certificate!"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Google Ads Essential Training</h2>
+              <p><span class="font-semibold">Skills:</span>Search Engine Marketing, Google Display Ads, Keyword Research, Etc. </p>
+              <div class="card-actions justify-end">
+                <a
+                href="https://www.linkedin.com/learning/certificates/07a621e26f04ba7e83554dc064125fbd6e837a3e1c38ae01286fc4abb95e513d?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B1QNy0r%2FwT0CLkokYo0paeQ%3D%3D"
+                target="_blank"
+                ><button class="btn btn-accent">Show Credentials</button></a
+              >
+              </div>
+            </div>
+          </div>
+          
+          <div class="card card-cert group">
+            <figure class="h-[50%]">
+              <img
+                class="group-hover:transition-all group-hover:duration-700 group-hover:scale-110"
+                src="assets/img/ga4.png"
+                alt="car!"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Google Analytics</h2>
+              <p><span class="font-semibold">Skills: </span> Google Analytics 4, Conversion Tracking, Tag Manager, FB Pixel</p>
+              <div class="card-actions justify-end">
+                <a
+                href="https://www.linkedin.com/learning/certificates/07a621e26f04ba7e83554dc064125fbd6e837a3e1c38ae01286fc4abb95e513d?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BZLjubUySS0ycb%2FLBa6jn%2Bw%3D%3D"
+                target="_blank"
+                ><button class="btn btn-accent">Show Credentials</button></a
+              >
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <!-- certifications section end and contact section starts  -->
+      <section
+        id="contact"
+        class="bg-[url(assets/img/overlay-bg.jpg)] bg-cover flex justify-center items-center"
+      >
+        <div
+          class="flex flex-col items-center h-auto w-[90%] m-5 bg-[#FCF8F3] dark:bg-[#66707a] dark:text-slate-100 text-slate-900 px-10 py-16 mb-12 rounded shadow shadow-slate-300"
+        >
+          <div class="grid md:grid-cols-2 md:gap-3">
+            <div class="col-span-1 flex flex-col items-center">
+              <h3 class="text-black text-2xl p-1 font-bold dark:text-gray-50">
+                Send Message!
+              </h3>
+              <form
+                class="flex flex-col items-center"
+                target="_blank"
+                action="#"
+                method="post"
+              >
+                <input
+                  name="name"
+                  class="placeholder:text-black placeholder:p-2 dark:placeholder:text-white focus:border-blue-600 dark:text-white my-2 w-64 h-10 rounded-lg shadow-sm shadow-gray-500 bg-slate-300 border border-slate-900 dark:bg-slate-600"
+                  type="text"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  name="email"
+                  class="placeholder:text-black placeholder:p-2 dark:placeholder:text-white focus:border-blue-600 dark:text-white my-2 w-64 h-10 rounded-lg shadow-sm shadow-gray-500 bg-slate-300 border border-slate-900 dark:bg-slate-600"
+                  type="email"
+                  placeholder="Your email"
+                  required
+                />
+                <input
+                  name="subject"
+                  class="placeholder:text-black placeholder:p-2 dark:placeholder:text-white focus:border-blue-600 dark:text-white my-2 w-64 h-10 rounded-lg shadow-sm shadow-gray-500 bg-slate-300 border border-slate-900 dark:bg-slate-600"
+                  type="text"
+                  placeholder="Subject"
+                  required
+                />
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  name="Message"
+                  id="Message"
+                  cols="30"
+                  rows="7"
+                  class="placeholder:text-black placeholder:p-2 dark:placeholder:text-white focus:border-blue-600 dark:text-white my-2 w-64 h-40 rounded-lg shadow-sm shadow-gray-500 bg-gray-300 border border-slate-900 dark:bg-slate-600"
+                ></textarea>
+                <input
+                  type="submit"
+                  value="Send"
+                  class="btn button text-white my-2"
+                />
+              </form>
+            </div>
+            <div class="col-span-1">
+              <h3 class="m-5 text-3xl text-black font-bold dark:text-gray-50 font-serif">
+                Get in Touch
+              </h3>
+              <p class="m-5 text-xl text-black dark:text-gray-200 font-sans">
+                Please fill in the form with your message and I will get back to
+                you as soon as I can. Thank You!
+              </p>
+              <ul class="m-5 flex mr-10 items-center">
+                <li
+                  class="inline-flex m-4 items-center hover:translate-y-1 hover:border-blue-600 border-4 rounded-full"
+                >
+                  <a
+                    href="https://www.instagram.com/nilesh__gosavi/"
+                    target="_blank"
+                    ><img
+                      src="assets/img/instagram-20.png"
+                      alt="instagram icon"
+                      class="w-10 h-10"
+                  /></a>
+                </li>
+                <li
+                  class="inline-flex m-4 items-center hover:border-blue-600 border-4 hover:translate-y-1 rounded-full"
+                >
+                  <a
+                    href="https://www.linkedin.com/in/nilesh-gosavi77/"
+                    target="_blank"
+                  >
+                    <img
+                      src="assets/img/linkedin-20.png"
+                      alt="instagram icon"
+                      class="w-10 h-10"
+                    />
+                  </a>
+                </li>
+                <li
+                  class="inline-flex m-4 items-center hover:border-blue-600 border-4 hover:translate-y-1 rounded-full"
+                >
+                  <a href="mailto:nbgosavi5@gmail.com"
+                    ><img
+                      src="assets/img/email-20.png"
+                      alt="instagram icon"
+                      class="w-10 h-10"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact section ends  -->
+    </main>
+    <!-- footer section starts  -->
+    <footer>
+      <div
+        class="h-12 max-w-full relative bottom-0 bg-sky-50 dark:bg-zinc-800 overflow-hidden flex justify-around m-auto items-center"
+      >
+        <p class="text-black text-center dark:text-white">
+          Made with ❤️ and Tailwind
+        </p>
+        <!-- footer social icons -->
+        <ul class="inline-flex mr-10 items-center">
+          <li
+            class="inline-flex m-1 items-center hover:border-blue-600 border-4 rounded-full"
+          >
+            <a href="https://www.instagram.com/nilesh__gosavi/" target="_blank"
+              ><img
+                src="assets/img/instagram-20.png"
+                alt="instagram icon"
+                class="w-5 h-5"
+            /></a>
+          </li>
+          <li
+            class="inline-flex m-1 items-center hover:border-blue-600 border-4 rounded-full"
+          >
+            <a
+              href="https://www.linkedin.com/in/nilesh-gosavi77/"
+              target="_blank"
+            >
+              <img
+                src="assets/img/linkedin-20.png"
+                alt="instagram icon"
+                class="w-5 h-5"
+              />
+            </a>
+          </li>
+          <li
+            class="inline-flex m-1 items-center hover:border-blue-600 border-4 rounded-full"
+          >
+            <a href="mailto:nbgosavi5@gmail.com"
+              ><img
+                src="assets/img/email-20.png"
+                alt="instagram icon"
+                class="w-5 h-5"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- footer section ends  -->
+
+    <!-- javascript for enabling dark mode -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const htmlTag = document.getElementById("htmlTag");
+        const darkModeToggle = document.getElementById("darkModeToggle");
+
+        darkModeToggle.addEventListener("click", function () {
+          htmlTag.classList.toggle("dark");
+        });
+      });
+      // making the system preference as default dark/light mode
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+  </body>
+</html>
+
+<!-- end of the document  -->

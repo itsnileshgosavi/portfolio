@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button{
+    @apply p-3 m-5 bg-[#7743DB] rounded-xl shadow-md shadow-neutral-500 hover:bg-[#5f36ab]
+}
+
+
+
+.card-cert{
+    @apply md:w-96 w-64 sm:w-72 h-[500px] bg-[#DFF5FF] dark:bg-inherit text-black dark:text-slate-200 hover:scale-105 hover:transition-all glass m-5 overflow-hidden
+}
+
+.card-proj{
+    @apply md:w-96 w-64 sm:w-72 h-[500px] bg-[#9696B6] dark:bg-[#C7C7C7] text-black dark:text-slate-200 hover:scale-105 hover:transition-all m-5 overflow-hidden
+}
+
+.progress-container{
+    @apply w-[95%] md:w-[80%] bg-neutral-400 dark:bg-neutral-800 mx-6 mb-5 rounded-2xl h-8
+}
+
+.progress{
+    @apply bg-blue-600 p-0.5 text-center font-bold text-xs md:text-xl text-[#EBEBEB] leading-none  shadow-md shadow-slate-700 rounded-2xl h-8
+}
