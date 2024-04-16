@@ -6,8 +6,6 @@
     @apply p-3 m-5 bg-[#7743DB] rounded-xl shadow-md shadow-neutral-500 hover:bg-[#5f36ab]
 }
 
-
-
 .card-cert{
     @apply md:w-96 w-64 sm:w-72 h-[500px] bg-[#DFF5FF] dark:bg-inherit text-black dark:text-slate-200 hover:scale-105 hover:transition-all glass m-5 overflow-hidden
 }
@@ -22,4 +20,32 @@
 
 .progress{
     @apply bg-blue-600 p-0.5 text-center font-bold text-xs md:text-xl text-[#EBEBEB] leading-none  shadow-md shadow-slate-700 rounded-2xl h-8
+}
+
+.active{
+    @apply underline underline-offset-4 !text-red-500 mb-1 transition duration-300;
+}
+
+@layer base{
+    /* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary) var(--primary);
+  }
+  
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: var(--primary);
+    border-radius: 50px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--secondary);
+    border-radius: 50px;
+    border: 10px solid var(--primary);
+  }
 }

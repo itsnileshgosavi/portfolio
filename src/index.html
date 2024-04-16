@@ -19,8 +19,8 @@
   </head>
   <body class="bg-[#EBF3E8] dark:bg-[#31363F] m-0">
     <!-- Header Section -->
-    <header class="sticky top-0 bg-neutral-300 dark:bg-neutral-900 z-50 w-screen overflow-hidden">
-      <div class="container flex items-center justify-between">
+    <header class="sticky top-0 bg-neutral-300 dark:bg-neutral-900 bg-opacity-50 z-50 mx-0 w-full overflow-hidden">
+      <div class="flex items-center justify-between w-screen mx-0 overflow-hidden">
         <h1>
           <a
             class="p-5 text-3xl sm:text-4xl md:text-5xl text-slate-950 dark:text-white font-serif"
@@ -119,44 +119,44 @@
           </div>
         </div>
             <!-- navbar for large and medium devices -->
-        <nav class="hidden md:inline-flex uppercase">
-          <ul class="flex max-w-full">
-            <li class="mx-0 p-2 sm:p-3 sm:m-1">
+        <nav class="hidden md:inline-flex uppercase max-w-full mx-0">
+          <ul id="navlinks" class="flex w-full">
+            <li class="mx-0 p-2 sm:p-3 sm:mx-1 md:mx-0">
               <a
                 class="dark:text-white hover:underline hover:text-blue-800 text-slate-950 text-sm lg:textarea-md font-bold" 
                 href="#hero"
                 >Home</a
               >
             </li>
-            <li class="mx-0 p-2 sm:p-3 sm:m-1">
+            <li class="mx-0 p-2 sm:p-3 sm:mx-1 md:mx-0">
               <a
                 class="dark:text-white hover:underline hover:text-blue-800 text-slate-950 text-sm lg:textarea-md font-bold"
                 href="#about"
                 >About</a
               >
             </li>
-            <li class="mx-0 p-2 sm:p-3 sm:m-1">
+            <li class="mx-0 p-2 sm:p-3 sm:mx-1 md:mx-0">
               <a
                 class="dark:text-white hover:underline hover:text-blue-800 text-slate-950 text-sm lg:textarea-md font-bold"
                 href="#skills"
                 >Skills</a
               >
             </li>
-            <li class="mx-0 p-2 sm:p-3 sm:m-1">
+            <li class="mx-0 p-2 sm:p-3 sm:mx-1 md:mx-0">
               <a
                 class="dark:text-white hover:underline hover:text-blue-800 text-slate-950 text-sm lg:textarea-md font-bold"
                 href="#projects"
                 >Projects</a
               >
             </li>
-            <li class="mx-0 p-2 sm:p-3 sm:m-1">
+            <li class="mx-0 p-2 sm:p-3 sm:mx-1 md:mx-0">
               <a
                 class="dark:text-white hover:underline hover:text-blue-800 text-slate-950 text-sm lg:textarea-md font-bold"
                 href="#certifications"
                 >Certifications</a
               >
             </li>
-            <li class="mx-0 p-2 sm:p-3 sm:m-1">
+            <li class="mx-0 p-2 sm:p-3 sm:mx-1 md:mx-0">
               <a
                 class="dark:text-white hover:underline hover:text-blue-800 text-slate-950 text-sm lg:textarea-md font-bold"
                 href="#contact"
@@ -202,13 +202,13 @@
     <!-- End Header -->
 
     <!-- hero section starts -->
-    <div id="hero" class="hero min-h-screen">
+    <section id="hero" class="hero min-h-screen">
       <div
         class="hero-content flex-col lg:flex-row justify-center items-center"
       >
         <img
           src="assets/img/IMG_9.jpg"
-          class="max-w-60 md:max-w-sm rounded-lg shadow-2xl shadow-black hover:transition-all hover:scale-x-110"
+          class="max-w-60 lg:mx-10 md:max-w-sm rounded-lg shadow-2xl shadow-black hover:transition-all hover:scale-x-110"
         />
         <div class="flex flex-col justify-center items-center">
           <h1
@@ -275,9 +275,10 @@
           >
         </div>
       </div>
-    </div>
+    </section>
    
     <!-- hero section ends -->
+    <div class="divider"></div>
 
     <main id="main">
       <!-- About section starts  -->
@@ -344,6 +345,7 @@
         </div>
       </section>
       <!-- about section ends  -->
+      <div class="divider"></div>
       <!-- skills section begins -->
       <section id="skills" class="flex flex-col justify-center items-center">
         <h2 class="text-center mb-5 text-3xl font-extrabold dark:text-slate-200 text-slate-900">My Skills</h2>
@@ -423,19 +425,19 @@
 
             <div class="grid grid-cols-2 grid-rows-2 gap-6">
               <div class="text-center">
-                <div class="radial-progress bg-green-500 text-primary-content border-4 border-green-700" style="--value:95;" role="progressbar"> 95%</div>
+                <div class="radial-progress bg-[#EEE4B1] text-primary-content border-4 border-[#EEE4B1]" style="--value:95;" role="progressbar"> 95%</div>
                 <p class="font-semibold text-sm font-mono dark:text-white my-4">Communication</p>
               </div>
               <div class="text-center">
-                <div class="radial-progress bg-green-500 text-primary-content border-4 border-green-700" style="--value:85;" role="progressbar"> 85%</div>
-                <p class="font-semibold text-sm font-mono dark:text-white my-4">creativity</p>
+                <div class="radial-progress bg-[#EEE4B1] text-primary-content border-4 border-[#EEE4B1]" style="--value:85;" role="progressbar"> 85%</div>
+                <p class="font-semibold text-sm font-mono dark:text-white my-4">Creativity</p>
               </div>
               <div class="text-center">
-                <div class="radial-progress bg-green-500 text-primary-content border-4 border-green-700" style="--value:80;" role="progressbar"> 80%</div>
+                <div class="radial-progress bg-[#EEE4B1] text-primary-content border-4 border-[#EEE4B1]" style="--value:80;" role="progressbar"> 80%</div>
                 <p class="font-semibold text-sm font-mono dark:text-white my-4">Problem Solving</p>
               </div>
               <div class="text-center">
-                <div class="radial-progress bg-green-500 text-primary-content border-4 border-green-700" style="--value:90;" role="progressbar"> 90%</div>
+                <div class="radial-progress bg-[#EEE4B1] text-primary-content border-4 border-[#EEE4B1]" style="--value:90;" role="progressbar"> 90%</div>
                 <p class="font-semibold text-sm font-mono dark:text-white my-4">Leadership</p>
               </div>
             </div>
@@ -443,6 +445,7 @@
         </div>
       </section>
       <!-- skills section ends  -->
+      <div class="divider"></div>
       <!-- project section starts  -->
       <section id="projects" class="flex flex-col justify-center items-center w-full">
         <div
@@ -531,6 +534,7 @@
           
         </div>
       </section>
+      <div class="divider"></div>
       <!-- projects section end and certificate section starts  -->
       <section
         id="certifications"
@@ -658,6 +662,8 @@
           
         </div>
       </section>
+
+      <div class="divider"></div>
       <!-- certifications section end and contact section starts  -->
       <section
         id="contact"
@@ -766,6 +772,7 @@
       </section>
       <!-- contact section ends  -->
     </main>
+    <div class="divider"></div>
     <!-- footer section starts  -->
     <footer>
       <div
@@ -838,6 +845,8 @@
         document.documentElement.classList.remove("dark");
       }
     </script>
+     <!-- javascript file  -->
+     <script src="index.js"></script>
   </body>
 </html>
 
