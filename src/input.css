@@ -7,11 +7,11 @@
 }
 
 .card-cert{
-    @apply md:w-96 w-64 sm:w-72 h-[500px] bg-[#DFF5FF] dark:bg-inherit text-black dark:text-slate-200 hover:scale-105 hover:transition-all glass m-5 overflow-hidden
+    @apply md:w-96 w-64 sm:w-72 h-[500px] bg-[#DFF5FF] dark:bg-inherit text-black dark:text-slate-200  glass m-5 overflow-hidden
 }
 
 .card-proj{
-    @apply md:w-96 w-64 sm:w-72 h-[500px] bg-[#9696B6] dark:bg-[#C7C7C7] text-black dark:text-slate-200 hover:scale-105 hover:transition-all m-5 overflow-hidden
+    @apply md:w-96 w-64 sm:w-72 h-[500px] bg-[#efeff1] dark:bg-[#140b1c] text-black dark:text-slate-200 m-5 overflow-hidden
 }
 
 .progress-container{
@@ -23,7 +23,7 @@
 }
 
 .active{
-    @apply underline underline-offset-4 !text-red-500 mb-1 transition duration-300;
+    @apply !text-red-500 mb-1 transition duration-300;
 }
 
 @layer base{
@@ -48,4 +48,32 @@
     border-radius: 50px;
     border: 10px solid var(--primary);
   }
+
+  @keyframes typing {
+    0% { width: 0 }
+    to { width: 100% }
+  }
+
+  .animate-typed{
+    animation: typing 3.5s steps(45, end) 1s;
+  }
+
+  .animate-underline:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #6b528b;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  }
+  .animate-underline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+ 
 }

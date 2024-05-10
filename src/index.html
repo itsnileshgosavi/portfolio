@@ -16,30 +16,33 @@
 
     <!-- tailwind css file -->
     <link rel="stylesheet" href="output.css" />
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
-  <body class="bg-[#EBF3E8] dark:bg-[#31363F] m-0">
+  <body class="bg-[#f7f7f7] dark:bg-[#0f0716] m-0">
     <!-- Header Section -->
-    <header class="sticky top-0 bg-neutral-300 dark:bg-neutral-900 bg-opacity-50 z-50 mx-0 w-full overflow-hidden">
-      <div class="flex items-center justify-between w-screen mx-0 overflow-hidden">
+    <header class="sticky top-0 bg-white bg-opacity-0 z-50 mx-0 w-full">
+      <div class="flex items-center justify-between max-w-full mx-0 ">
         <h1>
           <a
-            class="p-5 text-3xl sm:text-4xl md:text-5xl text-slate-950 dark:text-white font-serif"
-            href="#"
-            >Portfolio</a
+            class="p-2 ml-2 mb-0 animate-underline relative text-3xl sm:text-4xl md:text-5xl bg-gradient-to-r from-purple-600 shadow-purple-600 rounded-lg to-purple-500 text-transparent bg-clip-text font-bold font-[Montserrat, sans-serif]"
+            href="./"
+            >Nilesh Gosavi</a
           >
         </h1>
         <!-- day night toggle visible only to small devices  -->
         <div class="mx-0 p-2 sm:p-3 sm:m-1 md:hidden">
           <label class="swap swap-rotate">
             <input
-              id="darkModeTogglee"
+              id="darkModeToggleMb"
               type="checkbox"
               class="theme-controller"
             />
 
             <!-- sun icon -->
             <svg
-              class="swap-off fill-orange-600 w-8 h-8"
+              class="swap-off fill-orange-500 w-8 h-8"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >
@@ -123,42 +126,42 @@
           <ul id="navlinks" class="flex w-full">
             <li class="mx-0 p-2 sm:p-3 sm:mx-1 md:mx-0">
               <a
-                class="dark:text-white hover:underline hover:text-blue-800 text-slate-950 text-sm lg:textarea-md font-bold" 
+                class="dark:text-white animate-underline relative hover:text-purple-800 text-slate-950 text-sm lg:textarea-md font-bold" 
                 href="#hero"
                 >Home</a
               >
             </li>
             <li class="mx-0 p-2 sm:p-3 sm:mx-1 md:mx-0">
               <a
-                class="dark:text-white hover:underline hover:text-blue-800 text-slate-950 text-sm lg:textarea-md font-bold"
+                class="dark:text-white animate-underline relative hover:text-purple-800 text-slate-950 text-sm lg:textarea-md font-bold"
                 href="#about"
                 >About</a
               >
             </li>
             <li class="mx-0 p-2 sm:p-3 sm:mx-1 md:mx-0">
               <a
-                class="dark:text-white hover:underline hover:text-blue-800 text-slate-950 text-sm lg:textarea-md font-bold"
+                class="dark:text-white animate-underline relative hover:text-purple-800 text-slate-950 text-sm lg:textarea-md font-bold"
                 href="#skills"
                 >Skills</a
               >
             </li>
             <li class="mx-0 p-2 sm:p-3 sm:mx-1 md:mx-0">
               <a
-                class="dark:text-white hover:underline hover:text-blue-800 text-slate-950 text-sm lg:textarea-md font-bold"
+                class="dark:text-white animate-underline relative hover:text-purple-800 text-slate-950 text-sm lg:textarea-md font-bold"
                 href="#projects"
                 >Projects</a
               >
             </li>
             <li class="mx-0 p-2 sm:p-3 sm:mx-1 md:mx-0">
               <a
-                class="dark:text-white hover:underline hover:text-blue-800 text-slate-950 text-sm lg:textarea-md font-bold"
+                class="dark:text-white animate-underline relative hover:text-purple-800 text-slate-950 text-sm lg:textarea-md font-bold"
                 href="#certifications"
                 >Certifications</a
               >
             </li>
             <li class="mx-0 p-2 sm:p-3 sm:mx-1 md:mx-0">
               <a
-                class="dark:text-white hover:underline hover:text-blue-800 text-slate-950 text-sm lg:textarea-md font-bold"
+                class="dark:text-white animate-underline relative hover:text-purple-800 text-slate-950 text-sm lg:textarea-md font-bold"
                 href="#contact"
                 >Contact</a
               >
@@ -174,7 +177,7 @@
 
                 <!-- sun icon -->
                 <svg
-                  class="swap-off fill-orange-600 w-8 h-8"
+                  class="swap-off fill-orange-600 w-7 h-7"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                 >
@@ -185,7 +188,7 @@
 
                 <!-- moon icon -->
                 <svg
-                  class="swap-on fill-slate-400 w-8 h-8"
+                  class="swap-on fill-slate-500 w-7 h-7"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                 >
@@ -208,20 +211,20 @@
       >
         <img
           src="assets/img/IMG_9.jpg"
-          class="max-w-60 lg:mx-10 md:max-w-sm rounded-lg shadow-2xl shadow-black hover:transition-all hover:scale-x-110"
+          class="max-w-60 lg:mx-10 md:max-w-sm rounded-lg shadow-2xl shadow-black hover:transition-all"
         />
         <div class="flex flex-col justify-center items-center">
           <h1
-            class="text-4xl text-gray-700 dark:text-[#F8F6F4] font-bold md:text-6xl"
+            class="text-4xl text-gray-700 dark:text-[#F8F6F4] font-semibold md:text-6xl"
           >
-            Nilesh Gosavi
+           Hi I'm <span class="animate-underline inline-block relative font-semibold font-[Montserrat, sans-serif] bg-gradient-to-r from-purple-900 to-purple-500 text-transparent bg-clip-text">Nilesh</span>
           </h1>
-          <p class="py-6 text-gray-500 text-2xl dark:text-[#E3F4F4]">
+          <p class="py-6 text-gray-500 text-2xl dark:text-[#E3F4F4] animate-typed mx-auto text-nowrap overflow-hidden">
             Web Developer, Freelancer, SEO Specialist
           </p>
           <ul class="m-5 flex mr-10 items-center">
-            <li
-              class="inline-flex m-4 items-center hover:translate-y-1 hover:border-blue-600 border-4 rounded-full"
+            <!-- <li
+              class="inline-flex m-4 items-center hover:-translate-y-1 hover:border-blue-600 border-4 rounded-full"
             >
               <a
                 href="https://www.instagram.com/nilesh__gosavi/"
@@ -231,9 +234,9 @@
                   alt="instagram icon"
                   class="w-10 h-10"
               /></a>
-            </li>
+            </li> -->
             <li
-              class="inline-flex m-4 items-center hover:border-blue-600 border-4 hover:translate-y-1 rounded-full"
+              class="inline-flex m-4 items-center hover:border-purple-600 border-2 hover:-translate-y-1 rounded-full"
             >
               <a
                 href="https://www.linkedin.com/in/nilesh-gosavi77/"
@@ -247,19 +250,19 @@
               </a>
             </li>
             <li
-              class="inline-flex m-4 items-center hover:border-blue-600 border-4 hover:translate-y-1 rounded-full"
+              class="inline-flex m-4 items-center hover:border-purple-600 border-2 hover:-translate-y-1 rounded-full"
             >
               <a href="mailto:nbgosavi5@gmail.com"
                 ><img
                   src="assets/img/email-20.png"
-                  alt="instagram icon"
+                  alt="email icon"
                   class="w-10 h-10"
               /></a>
             </li>
             <li
-              class="inline-flex m-4 items-center hover:border-blue-600 border-4 hover:translate-y-1 rounded-full"
+              class="inline-flex m-4 items-center hover:border-purple-600 border-2 hover:-translate-y-1 rounded-full"
             >
-              <a href="https://github.com/"
+              <a target="_blank" href="https://github.com/itsnileshgosavi"
                 ><img
                   src="assets/img/github-48.png"
                   alt="github icon"
@@ -271,7 +274,7 @@
             href="https://drive.google.com/file/d/1-WAyUYZyOXixD64tS33TEKjiaEj2EsW5/view?usp=sharing"
             target="_blank"
             download="nilesh gosavi resume"
-            ><button class="btn btn-primary">Download Resume</button></a
+            ><button class="btn btn-outline hover:-translate-y-1 text-white hover:text-white hover:bg-gradient-to-l hover:from-purple-500 hover:to-purple-900 bg-gradient-to-r from-purple-500 to-purple-950">Download Resume</button></a
           >
         </div>
       </div>
@@ -287,11 +290,11 @@
         class="flex flex-col flex-wrap justify-center items-center"
       >
         <div
-          class="h-auto w-[90%] m-5 bg-[#FCF8F3] dark:bg-[#66707a] dark:text-slate-100 text-slate-900 px-12 py-16 mb-12 rounded shadow shadow-slate-300 flex flex-col md:grid md:grid-cols-2 gap-10"
+          class="h-auto w-[90%] m-5 bg-[#FCF8F3] dark:bg-[#060709] dark:text-slate-100 text-slate-900 px-12 py-16 mb-12 rounded shadow shadow-slate-300 flex flex-col md:grid md:grid-cols-2 gap-10"
         >
           <div class="flex flex-col col-span-1 xl:flex-row">
             <img
-              class="w-auto h-80 rounded-md shadow-md shadow-amber-100"
+              class="w-auto h-80 rounded-lg shadow-md shadow-purple-500"
               src="assets/img/Id Photo.jpeg"
               alt="profile picture"
             />
@@ -350,7 +353,7 @@
       <section id="skills" class="flex flex-col justify-center items-center">
         <h2 class="text-center mb-5 text-3xl font-extrabold dark:text-slate-200 text-slate-900">My Skills</h2>
         <div
-          class="h-auto w-[90%] m-5 bg-[#FCF8F3] dark:bg-[#66707a] dark:text-slate-100 text-slate-900 px-12 py-16 mb-12 rounded shadow shadow-slate-300 flex flex-col md:grid md:grid-cols-2 gap-10"
+          class="h-auto w-[90%] m-5 bg-[#FCF8F3] dark:bg-[#12091a] dark:text-slate-100 text-slate-900 px-12 py-16 mb-12 rounded shadow shadow-slate-300 flex flex-col md:grid md:grid-cols-2 gap-10"
         >
         <div class="flex col-span-1 flex-col justify-center items-center">
           <h3 class="text-3xl font-bold mb-6 dark:text-slate-50">Technical</h3>
@@ -449,7 +452,7 @@
       <!-- project section starts  -->
       <section id="projects" class="flex flex-col justify-center items-center w-full">
         <div
-          class="flex flex-col items-center h-auto w-[90%] m-5 bg-[#FCF8F3] dark:bg-[#66707a] dark:text-slate-100 text-slate-900 px-10 py-16 mb-12 rounded shadow shadow-slate-300"
+          class="flex flex-col items-center h-auto w-[90%] m-5 bg-[#FCF8F3] dark:bg-[#060709] dark:text-slate-100 text-slate-900 px-10 py-16 mb-12 rounded shadow shadow-slate-300"
         >
           <h2 class="text-center mb-5 text-3xl font-extrabold dark:text-slate-200 text-slate-900">My Projects</h2>
           <div class="flex flex-wrap items-center justify-evenly">
@@ -458,39 +461,39 @@
             <div class="card card-proj group">
               <figure class="px-10 pt-10"><img class="rounded-lg group-hover:transition-all group-hover:duration-700 group-hover:scale-125" src="assets/img/task-manager.jpg" alt="task Manager" /></figure>
               <div class="card-body">
-                <h2 class="card-title text-2xl mb-2 text-center text-white dark:text-black font-extrabold">Task Manager App</h2>
-                <p class="text-white dark:text-slate-900">Project description: This app allows you to manage your tasks. Add your tasks in and mark as completed when done. Or mark as pending 
+                <h2 class="card-title text-2xl mb-2 text-center text-[#2a2e37] dark:text-white font-extrabold">Task Manager</h2>
+                <p class="text-[#242227] dark:text-white">Project description: This app allows you to manage your tasks. Add your tasks in and mark as completed when done. Or mark as pending 
                   when its pending. Just delete the tasks when your done with them forever!</p>
                 <div class="card-actions justify-end">
-                 <a href="https://task-manager-theta-ashy.vercel.app/login" target="_blank"><button class="btn btn-primary">View in Action</button></a> 
+                 <a href="https://task-manager.nileshgosavi.tech/" target="_blank"><button class="btn btn-primary">View in Action</button></a> 
                 </div>
               </div>
             </div>
             <div class="card card-proj group">
               <figure class="px-10 pt-10"><img class="group-hover:transition-all group-hover:duration-700 group-hover:scale-125" src="assets/img/logo-detect.jpg" alt="logo" /></figure>
               <div class="card-body">
-                <h2 class="card-title text-2xl mb-2 text-center text-white dark:text-black font-extrabold">Logo Detector App</h2>
-                <p class="text-white dark:text-slate-900">Project description: This app can detect logos in the picture. It uses clarify API to do so. The app also has user authentication functionality.</p>
+                <h2 class="card-title text-2xl mb-2 text-center text-[#2a2e37] dark:text-white font-extrabold">Logo Detector App</h2>
+                <p class="text-[#242227] dark:text-white">Project description: This app can detect logos in the picture. It uses clarify API to do so. The app also has user authentication functionality.</p>
                 <div class="card-actions justify-end">
-                 <a href="https://logo-detector.vercel.app/login" target="_blank"><button class="btn btn-primary">View in Action</button></a> 
+                 <a href="https://logo-detector.nileshgosavi.tech/login" target="_blank"><button class="btn btn-primary">View in Action</button></a> 
                 </div>
               </div>
             </div>
             <div class="card card-proj group">
               <figure class="px-10 pt-10"><img class="group-hover:transition-all group-hover:duration-700 group-hover:scale-125" src="assets/img/spotify.png" alt="spotify logo" /></figure>
               <div class="card-body">
-                <h2 class="card-title text-2xl mb-2 text-center text-white dark:text-black font-extrabold">Spotify Clone</h2>
-                <p class="text-white dark:text-slate-900">Project description: This is a spotify clone built using react and spotify api. It requires premium to work.</p>
+                <h2 class="card-title text-2xl mb-2 text-center text-[#2a2e37] dark:text-white font-extrabold">Spotify Clone</h2>
+                <p class="text-[#242227] dark:text-white">Project description: This is a spotify clone built using react and spotify api. It requires premium to work.</p>
                 <div class="card-actions justify-end">
                  <a href="https://itsnileshgosavi.github.io/Spotify-Clone-React-Project/" target="_blank"><button class="btn btn-primary">View in Action</button></a> 
                 </div>
               </div>
             </div>
-            <div class="card card-proj group">
+            <!-- <div class="card card-proj group">
               <figure class="px-10 pt-10"><img class="group-hover:transition-all group-hover:duration-700 group-hover:scale-125" src="assets/img/background generator.avif" alt="bg generator" /></figure>
               <div class="card-body">
-                <h2 class="card-title text-2xl mb-2 text-center text-white dark:text-black font-extrabold">Gradiient Background Generator</h2>
-                <p class="text-white dark:text-slate-900">Project description: This app generates gradient background code for css property. It is a basic app made with JS.!</p>
+                <h2 class="card-title text-2xl mb-2 text-center text-[#2a2e37] dark:text-white font-extrabold">Gradiient Background Generator</h2>
+                <p class="text-[#242227] dark:text-white">Project description: This app generates gradient background code for css property. It is a basic app made with JS.!</p>
                 <div class="card-actions justify-end">
                  <a href="https://github.com/itsnileshgosavi/backgroundgenerator" target="_blank"><button class="btn btn-primary">View in Action</button></a> 
                 </div>
@@ -499,8 +502,8 @@
             <div class="card card-proj group">
               <figure class="px-10 pt-10"><img class="group-hover:transition-all group-hover:duration-700 group-hover:scale-125 w-full" src="assets/img/face detection.jpg" alt="face detection bg image" /></figure>
               <div class="card-body">
-                <h2 class="card-title text-2xl mb-2 text-center text-white dark:text-black font-extrabold">Face Detector App</h2>
-                <p class="text-white dark:text-slate-900">Project description: This app allows you to faces in the image. Just copy the link of the image and provide to the app and see magic.
+                <h2 class="card-title text-2xl mb-2 text-center text-[#2a2e37] dark:text-white font-extrabold">Face Detector App</h2>
+                <p class="text-[#242227] dark:text-white">Project description: This app allows you to faces in the image. Just copy the link of the image and provide to the app and see magic.
                   Check it out.
                 </p>
                 <div class="card-actions justify-end">
@@ -511,8 +514,8 @@
             <div class="card card-proj group">
               <figure class="px-10 pt-10"><img class="group-hover:transition-all group-hover:duration-700 group-hover:scale-125" src="assets/img/Red-YouTube-logo.png" alt="Youtube logo image" /></figure>
               <div class="card-body">
-                <h2 class="card-title text-2xl mb-2 text-center text-white dark:text-black font-extrabold">YouTube Clone</h2>
-                <p class="text-white dark:text-slate-900">Project description: This is a youtube clone app built using react for practice.
+                <h2 class="card-title text-2xl mb-2 text-center text-[#2a2e37] dark:text-white font-extrabold">YouTube Clone</h2>
+                <p class="text-[#242227] dark:text-white">Project description: This is a youtube clone app built using react for practice.
                   It is built using react, express and mongo db. It allows you to watch videos.
                 </p>
                 <div class="card-actions justify-end">
@@ -523,13 +526,13 @@
             <div class="card card-proj group">
               <figure class="px-10 pt-10"><img class="group-hover:transition-all group-hover:duration-700 group-hover:scale-125" src="assets/img/robot.jpg" alt="robots" /></figure>
               <div class="card-body">
-                <h2 class="card-title text-2xl mb-2 text-center text-white dark:text-black font-extrabold">Robo Friends</h2>
-                <p class="text-white dark:text-slate-900">Project description: This is simple react app that allows you to search through the cards with robots pictures.!</p>
+                <h2 class="card-title text-2xl mb-2 text-center text-[#2a2e37] dark:text-white font-extrabold">Robo Friends</h2>
+                <p class="text-[#242227] dark:text-white">Project description: This is simple react app that allows you to search through the cards with robots pictures.!</p>
                 <div class="card-actions justify-end">
                  <a href="https://github.com/itsnileshgosavi"><button class="btn btn-primary">View in Action</button></a> 
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           
         </div>
@@ -670,7 +673,7 @@
         class="bg-[url(assets/img/overlay-bg.jpg)] bg-cover flex justify-center items-center"
       >
         <div
-          class="flex flex-col items-center h-auto w-[90%] m-5 bg-[#FCF8F3] dark:bg-[#66707a] dark:text-slate-100 text-slate-900 px-10 py-16 mb-12 rounded shadow shadow-slate-300"
+          class="flex flex-col items-center h-auto w-[90%] m-5 bg-[#FCF8F3] dark:bg-[#170e21] dark:text-slate-100 text-slate-900 px-10 py-16 mb-12 rounded shadow shadow-slate-300"
         >
           <div class="grid md:grid-cols-2 md:gap-3">
             <div class="col-span-1 flex flex-col items-center">
@@ -729,8 +732,8 @@
                 you as soon as I can. Thank You!
               </p>
               <ul class="m-5 flex mr-10 items-center">
-                <li
-                  class="inline-flex m-4 items-center hover:translate-y-1 hover:border-blue-600 border-4 rounded-full"
+                <!-- <li
+                  class="inline-flex m-4 items-center hover:-translate-y-1 hover:border-purple-600 border-2 rounded-full"
                 >
                   <a
                     href="https://www.instagram.com/nilesh__gosavi/"
@@ -740,9 +743,19 @@
                       alt="instagram icon"
                       class="w-10 h-10"
                   /></a>
-                </li>
+                </li> -->
                 <li
-                  class="inline-flex m-4 items-center hover:border-blue-600 border-4 hover:translate-y-1 rounded-full"
+              class="inline-flex m-4 items-center hover:border-purple-600 border-2 hover:-translate-y-1 rounded-full"
+            >
+              <a href="https://github.com/"
+                ><img
+                  src="assets/img/github-48.png"
+                  alt="github icon"
+                  class="w-10 h-10"
+              /></a>
+            </li>
+                <li
+                  class="inline-flex m-4 items-center hover:border-purple-600 border-2 hover:-translate-y-1 rounded-full"
                 >
                   <a
                     href="https://www.linkedin.com/in/nilesh-gosavi77/"
@@ -756,7 +769,7 @@
                   </a>
                 </li>
                 <li
-                  class="inline-flex m-4 items-center hover:border-blue-600 border-4 hover:translate-y-1 rounded-full"
+                  class="inline-flex m-4 items-center hover:border-purple-600 border-2 hover:-translate-y-1 rounded-full"
                 >
                   <a href="mailto:nbgosavi5@gmail.com"
                     ><img
@@ -776,7 +789,7 @@
     <!-- footer section starts  -->
     <footer>
       <div
-        class="h-12 max-w-full relative bottom-0 bg-sky-50 dark:bg-zinc-800 overflow-hidden flex justify-around m-auto items-center"
+        class="h-12 max-w-full relative bottom-0 bg-sky-50 dark:bg-[#0f0716] overflow-hidden flex justify-around m-auto items-center"
       >
         <p class="text-black text-center dark:text-white">
           Made with ❤️ and Tailwind
@@ -784,7 +797,7 @@
         <!-- footer social icons -->
         <ul class="inline-flex mr-10 items-center">
           <li
-            class="inline-flex m-1 items-center hover:border-blue-600 border-4 rounded-full"
+            class="inline-flex m-1 items-center hover:border-blue-600 border-2 rounded-full"
           >
             <a href="https://www.instagram.com/nilesh__gosavi/" target="_blank"
               ><img
@@ -794,7 +807,7 @@
             /></a>
           </li>
           <li
-            class="inline-flex m-1 items-center hover:border-blue-600 border-4 rounded-full"
+            class="inline-flex m-1 items-center hover:border-blue-600 border-2 rounded-full"
           >
             <a
               href="https://www.linkedin.com/in/nilesh-gosavi77/"
@@ -808,7 +821,7 @@
             </a>
           </li>
           <li
-            class="inline-flex m-1 items-center hover:border-blue-600 border-4 rounded-full"
+            class="inline-flex m-1 items-center hover:border-blue-600 border-2 rounded-full"
           >
             <a href="mailto:nbgosavi5@gmail.com"
               ><img
@@ -823,28 +836,6 @@
 
     <!-- footer section ends  -->
 
-    <!-- javascript for enabling dark mode -->
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const htmlTag = document.getElementById("htmlTag");
-        const darkModeToggle = document.getElementById("darkModeToggle");
-
-        darkModeToggle.addEventListener("click", function () {
-          htmlTag.classList.toggle("dark");
-        });
-      });
-      // making the system preference as default dark/light mode
-      if (
-        localStorage.theme === "dark" ||
-        (!("theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
-    </script>
      <!-- javascript file  -->
      <script src="index.js"></script>
   </body>
