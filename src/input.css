@@ -7,11 +7,11 @@
 }
 
 .card-cert{
-    @apply md:w-96 w-64 sm:w-72 h-[500px] bg-[#DFF5FF] dark:bg-inherit text-black dark:text-slate-200 hover:scale-105 hover:transition-all glass m-5 overflow-hidden
+    @apply md:w-96 w-64 sm:w-72 h-[500px] bg-[#DFF5FF] dark:bg-inherit text-black dark:text-slate-200  glass m-5 overflow-hidden
 }
 
 .card-proj{
-    @apply md:w-96 w-64 sm:w-72 h-[500px] bg-[#9696B6] dark:bg-[#C7C7C7] text-black dark:text-slate-200 hover:scale-105 hover:transition-all m-5 overflow-hidden
+    @apply md:w-96 w-64 sm:w-72 h-[500px] bg-[#efeff1] dark:bg-[#140b1c] text-black dark:text-slate-200 m-5 overflow-hidden
 }
 
 .progress-container{
@@ -19,11 +19,23 @@
 }
 
 .progress{
-    @apply bg-blue-600 p-0.5 text-center font-bold text-xs md:text-xl text-[#EBEBEB] leading-none  shadow-md shadow-slate-700 rounded-2xl h-8
+    @apply bg-[#7743DB] p-0.5 text-center font-bold text-xs md:text-xl text-[#EBEBEB] leading-none  shadow-md shadow-slate-700 rounded-2xl h-8
 }
 
 .active{
-    @apply underline underline-offset-4 !text-red-500 mb-1 transition duration-300;
+    @apply !text-red-500 mb-1 transition duration-300;
+}
+.animate-progress{
+  animation: progressing 1s linear forwards;
+  
+}
+.animate-radial-progress{
+  animation: radialProgressing 1s linear forwards;
+  
+}
+.flip-in-ver-left {
+	-webkit-animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @layer base{
@@ -48,4 +60,87 @@
     border-radius: 50px;
     border: 10px solid var(--primary);
   }
+
+  @keyframes typing {
+    0% { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes progressing {
+    0%{
+      width: 0;
+      --value: 0;
+      
+    }
+    to{
+      width: var(--dynamic-width);
+      --value: var(--final-value);
+    }
+  }
+  @keyframes radialProgressing {
+    0%{
+     
+      --value: 0;
+      
+    }
+    10%{--value:10}
+    20%{--value:20}
+    30%{--value:30}
+    40%{--value:40}
+    50%{--value:50}
+    60%{--value:60}
+    to{
+     
+      --value: var(--final-value);
+    }
+  }
+  
+
+@-webkit-keyframes flip-in-ver-left {
+  0% {
+    -webkit-transform: rotateY(80deg);
+            transform: rotateY(80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+    opacity: 1;
+  }
+}
+@keyframes flip-in-ver-left {
+  0% {
+    -webkit-transform: rotateY(80deg);
+            transform: rotateY(80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+    opacity: 1;
+  }
+}
+
+
+  .animate-typed{
+    animation: typing 3.5s steps(45, end) 1s;
+  }
+
+  .animate-underline:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #6b528b;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  }
+  .animate-underline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+ 
 }
